@@ -1,0 +1,27 @@
+# -----------------------
+# 📦 Зависимости
+node_modules/
+
+# 🏗️ Сборка
+dist/
+build/
+.cache/
+webpack.cache/
+
+# 📁 Временные файлы
+*.log
+*.tmp
+*.temp
+*.tsbuildinfo
+
+# ⚙️ Конфиги IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 🌐 Сервисы деплоя
+.vercel/
+.env
+.env.*
