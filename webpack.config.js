@@ -6,8 +6,9 @@ module.exports = {
   entry: './src/index.tsx',
   mode: 'development',
   output: {
-    publicPath: 'auto',
-    clean: true,
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/mfe-header/',
   },
   devServer: {
     port: 3001,
