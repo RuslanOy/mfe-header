@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmfe_header=self.webpackChunkmfe_header||[]).push([[42],{42:(e,a,r)=>{r.r(a),r.d(a,{default:()=>l});var d=r(72),f=r.n(d);const l=()=>f().createElement("header",{style:{backgroundColor:"#f0f0f0",padding:"1em"}},f().createElement("h2",null,"🔗 Это Header из mfe-header (TS)"))}}]);
