@@ -3,12 +3,13 @@ const { ModuleFederationPlugin } = require('webpack').container;
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './src/bootstrap',
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/mfe-header/',
+    clean: true,
   },
   devServer: {
     port: 3001,
@@ -34,8 +35,12 @@ module.exports = {
         './Header': './src/Header',
       },
       shared: {
-        react: { singleton: true, requiredVersion: '^18' },
-        'react-dom': { singleton: true, requiredVersion: '^18' },
+        react: { singleton: true, requiredVersion: '^18.2.0', eager: false },
+        'react-dom': {
+          singleton: true,
+          requiredVersion: '^18.2.0',
+          eager: false,
+        },
       },
     }),
     new HtmlWebpackPlugin({
