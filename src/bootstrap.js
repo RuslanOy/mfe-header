@@ -1,1 +1,1 @@
-import('./index').catch((error) => console.error(error))
+import('./index').catch((error) => console.error('failed', error))
