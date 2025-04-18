@@ -34,4 +34,4 @@ jobs:
         with:
           branch: gh-pages # Таргетная ветка для GitHub Pages
           folder: dist # Папка, которая будет размещена на GitHub Pages
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
