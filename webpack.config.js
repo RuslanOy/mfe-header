@@ -1,7 +1,7 @@
-const path = require('path');
 const { ModuleFederationPlugin } = require('webpack').container;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { DefinePlugin } = require('webpack');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = (_, argv) => {
   const isProd = argv.mode === 'production';
